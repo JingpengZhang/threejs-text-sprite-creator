@@ -15,8 +15,8 @@
     "postversion": "git push && git push --tags"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "JingpengZhang",
+  "license": "MIT",
   "peerDependencies": {
     "three": ">=0.100.0"
   },
