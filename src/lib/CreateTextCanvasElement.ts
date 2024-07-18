@@ -184,7 +184,7 @@ const CreateTextCanvasElement = (text: string, options?: CreateTextCanvasElement
       const lineX = (innerWidth - ctx.measureText(line).width) / 2 + offsetX;
       const lineY = (index + 1) * fontSize + offsetY + index * lineSpacing;
 
-      drawTextStroke && ctx.strokeText(line, lineX, lineY);
+      if (drawTextStroke) ctx.strokeText(line, lineX, lineY);
       ctx.fillText(line, lineX, lineY);
     });
   }
